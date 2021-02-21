@@ -1,8 +1,16 @@
 .icon-div {
-    max-width: 100px;
-    background: red;
-    padding: 16px;
-    margin-left: 32px;
-    margin-top: 10px;
-
+    min-width: 225px;
+    padding-left: 25px;
+    margin-top: 20px;
 }
+
+.icon-span{
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 755px) {
+    .icon-div {
+      display: none;
+    }
+  }

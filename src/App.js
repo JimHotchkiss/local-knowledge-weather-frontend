@@ -1,22 +1,28 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import Navbar from "./containers/Navbar"
+import LandingPage from "./containers/LandingPage"
 import "./App.css"
-const weatherApi =
-  "http://api.openweathermap.org/data/2.5/weather?q=San%20Francisco&appid=306f25024f88ed11a16b1a425db8997e"
+
+const { REACT_APP_API_KEY } = process.env
 
 function App() {
   const [weatherData, setWeatherData] = useState({})
-  const handleFetchWeater = () => {
-    fetch(weatherApi)
+
+  const renderLandingPage = (
+    <LandingPage cityName={weatherData.name} weatherData={weatherData} />
+  )
+
+  const handleFetchWeather = (userInput) => {
+    fetch(
+      `http://api.openweathermap.org/data/2.5/weather?q=${userInput}&appid=${REACT_APP_API_KEY}`
+    )
       .then((resp) => resp.json())
-      .then((data) => console.log(data))
+      .then((data) => setWeatherData(data))
   }
   return (
     <>
-      <Navbar
-        weatherData={weatherData}
-        handleFeatchWeater={handleFetchWeater}
-      />
+      <Navbar fetchWeather={handleFetchWeather} />
+      {renderLandingPage}
     </>
   )
 }

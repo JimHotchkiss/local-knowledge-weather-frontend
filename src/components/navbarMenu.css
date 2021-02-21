@@ -1,4 +1,41 @@
 .navbar-menu {
-    margin-left: auto;
-    background: green;
+    margin-right: 30px;
+   min-width: 190px;
+   padding-top: 25px;
 }
+
+.menu-div {
+    margin-left: auto;
+    width: 30px;
+}
+
+.menu-div:hover {
+    cursor: pointer;
+}
+
+
+.menu {
+    
+    height: 3px;
+    width: 30px;
+    margin-bottom: 5px;
+    background: #fff
+}
+
+
+
+.one {
+    margin-bottom: 5px;
+}
+
+.two {
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 562px) {
+    .menu-div {
+        margin-left: 100px;
+    }
+  }
+
+

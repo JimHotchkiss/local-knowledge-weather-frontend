@@ -1,12 +1,12 @@
 * { 
-    margin: 0; 
-    padding: 0; 
-    border: 0; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
 
 body 
     { 
-    font-family: "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; 
- 
-   
+        font-family: 'montserrat', sans-serif;
+    /* font-family: "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;  */
+    overflow-x: hidden;
 } 

@@ -1,3 +1,9 @@
+# If you didn't build your project with create-react-app, to use .env, you'd have to install DOTENV. 
+    * In the root, create file called .env
+    * REACT_APP_MY_ENV='some-key-value'
+    * You can call this value in your app with  
+        - const { REACT__APP_MY_ENV} = process.env
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

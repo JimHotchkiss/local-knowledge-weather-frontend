@@ -5,11 +5,10 @@ import NavbarMenu from "../components/NavbarMenu"
 import "./navbar.css"
 
 function Navbar(props) {
-  console.log(props)
   return (
     <div className='navbar'>
       <NavbarIcon />
-      <SearchCity />
+      <SearchCity fetchWeather={props.fetchWeather} />
       <NavbarMenu />
     </div>
   )
