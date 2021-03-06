@@ -74,6 +74,16 @@
 
 }
 
+.comment-div {
+    margin: 0 auto;
+    width: 90%;
+    max-height: 150px;
+    background: #fff;
+    color: #262626;
+    overflow: scroll;
+    border-radius: 5px;
+}
+
 
 @media only screen and (max-width: 879px) and (min-width: 375px)  {
     .forcast-card {

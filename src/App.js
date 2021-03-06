@@ -5,6 +5,8 @@ import "./App.css"
 
 const { REACT_APP_API_KEY } = process.env
 
+//  `http://api.openweathermap.org/data/2.5/weather?q=${userInput}&appid=${REACT_APP_API_KEY}`
+
 function App() {
   const [weatherData, setWeatherData] = useState({})
 
